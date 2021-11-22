@@ -1,0 +1,397 @@
+
+/***** BODY *****/
+body{
+    font-family: 'Roboto', sans-serif;
+    background: white;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+    
+}
+
+/***** HEADER *****/
+header{
+    background: #222222;
+    color: white;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+}
+h2 header{
+    font-family: Roboto;
+    font-weight: bold;
+    text-align: center;
+    display:flex;
+}
+.opcionesDerecha{
+    display:flex;
+    align-items: center;
+}
+.opcionesDerecha nav{
+    display: flex;
+    align-items: center;
+
+}
+.opcionesDerecha a{
+    padding:6px;
+}
+
+/***MAIN****/
+main{
+}
+.headerNaranja{
+    background-color:  #F0A83E;
+    width: 100%;
+    height: 70px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0px auto 0px auto;
+    overflow:visible;
+    display: flex;
+    justify-content: space-around;
+}
+.headerNaranja img{ 
+    max-width: 75%;
+    height: auto;
+}
+.headerNaranja div{
+    display: flex;
+    justify-content: flex-end;
+}
+.headerNaranja nav {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    text-decoration: none;
+    float: right;
+}
+.headerNaranja a{
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    float: right;
+    padding: 5px;
+}
+.headerNaranja i{
+    padding:8px;
+}
+/******BANNER GRANDE************/
+.bannergrande{
+    background-image: url(/root/img/bannerGrande.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 700px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.ElementosBannerGrande {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    align-items: flex-end;
+    justify-content: center;
+    align-content:
+}
+
+.placer{
+    Width: 365px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    font-weight:500;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+/***
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+margin-left: 50px;
+margin-right: 50px;******/
+.descuento{
+    font-size: 40px;
+    font-weight: lighter;
+    letter-spacing: 0,5px;
+    margin-top:10px
+
+}
+#botonComederos{
+    display: flex;
+    padding:30px;
+    font-size: 25px;
+    background-color: #F0A83E;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+}
+/******PRODUCTOS DESTACADOS*********/
+.productosDestacados{
+}
+.productosDestacados div{
+    display: flex;
+    flex-direction: column;
+    
+}
+/****CARD******/
+#iconoHuella{
+    text-align: center;
+}
+.productosDestacados h2{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+.vinculosProductosDestacados{
+    display: flex;
+    justify-content: center;
+    background-color: #FFFFFF;
+    text-align: center;
+    font-family: Roboto;
+    margin: 10px 15px;
+}
+
+.linkProductosDestacados ul{
+    display: flex;
+    text-decoration: none;
+    color: black;
+}
+.linkProductosDestacados li{
+    list-style: none;
+
+
+}
+.linkProductosDestacados a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 5px;
+}
+/*******TARJETAS PRODUCTOS********/
+.TarjetasProductos{
+    display: flex;
+}
+.imagenesProductos{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    background-color: #FBFAF6;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    margin: 5px;
+    max-width: 90%;
+    text-align: center;
+}
+.cardProductName{
+    color: #3C2313;
+    font-size: 24px;
+    font-weight: 500;
+
+}
+.cardPrice{
+    color: #F0A83E;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+
+
+/*******CONTACTANOS************/
+.Contactanos{
+    margin: 0px auto 0px auto;
+    display: flex;
+    flex-direction: column;
+}
+.Contactanos h2{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+
+}
+.Input{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.formu1{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.nombreApellido{
+    background-color: #3C2313;
+    color: white;
+    border-radius: 15px;
+    width: 340px;
+    height: 40px;
+    font-family: Roboto;
+    font-weight: lighter;
+}
+.correoElectronico{
+    background-color: #3C2313;
+    color: white;
+    border-radius: 15px;
+    width: 340px;
+    height: 40px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+
+}
+.Telefono{
+    background-color: #3C2313;
+    color: white;
+    border-radius: 15px;
+    width: 340px;
+    height: 40px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+}
+.botonesContactanos{
+    display: flex;
+    font-size: 14px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+.botonResetear{
+    background: #8A8787;
+    border-radius: 15px;
+    color: white;
+    width: 110px;
+    height: 34px;
+    font-size: 16px;
+    padding: 10px;
+    margin: 10px;
+    border-style: none;
+}
+.botonEnviar{
+    background: #F0A83E;
+    border-radius: 15px;
+    color: white;
+    width: 110px;
+    height: 34px;
+    border-style: none;
+    font-size: 16px;
+    padding: 10px;
+    margin: 10px;
+}
+.suscribirse{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 62px;
+    display: flex;
+    background-color: #F0A83E;
+    color: #F3F3F3;
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: center;
+    padding: 20px;
+}
+/***
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F0A83E;
+    color: #F3F3F3;
+    font-size: 20px;
+    height: 62
+px
+;
+    font-weight: 700;
+    padding: 40
+px
+;******/
+.correoSuscribirse{
+    background: #FFFFFF;
+    border-radius: 15px;
+    width: 271px;
+    height: 40px;
+    color: lightgray;
+}
+.suscribirme{
+    width: 100px;
+    height: 34px;
+    background: #3C2313;
+    border-radius: 15px;
+    color: white;
+}
+.susNovedades{
+    color: #F3F3F3;
+    font-size: 20px;
+    text-align: center;
+}
+/**********FOOTER MARRON**********/
+.datos{
+    background-color: #3C2313;
+    color: #F3F3F3;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+}
+.ElementoDatos{
+    align-items: center;
+    display: flex;
+}
+.infoElement{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+
+}
+.infoName{
+    font-size: 24px;
+    font-weight: 500;
+}
+.infoData{
+    font-size: 18px;
+    font-weight: 500;
+    color: #8A8787;
+}
+
+/***** FOOTER *****/
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+footer p{
+    color: #FFFFFF;
+    text-align: center;
+}
+
+/*********** ul.ListaNavegacion{
+    background-color:  #F0A83E;
+    width: 100%;
+    height: 62px;
+    box-sizing: border-box;
+    display: inline;
+    list-style-type: none;
+    overflow: hidden;
+
+}
+li{
+    float: left;
+}
+li a{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    background-color:#F0A83E;
+  }
+.datos{
+    background-color: #3C2313;
+    color: white;
+}
