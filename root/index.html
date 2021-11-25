@@ -8,42 +8,43 @@
     <link rel="stylesheet" href="stylesheet.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="responsive.css">
 </head>
 <body>
     <header>
         <h2>Grandes ofertas en comederos</h2>
-        <nav class="opcionesDerecha">
-            <a>Español</a>
-            <a>$ARG</a>
-        </nav>
+        <div class="navHeaderNegro">
+            <select class="navHeader">
+                <option>Español</option>
+                <option>English</option>
+            </select>
+            <select class="navHeader">
+                <option>$ARG</option>
+                <option>$USD</option>
+            </select>
+        </div>
     </header>
     <main>
         <section class="headerNaranja">
             <img src="img/logoBannerNaranja.png" alt="imagen del logo">
-            <div>
+            <i id="menuBurger"class="fas fa-bars"></i>
                 <nav class="NavNaranja">
                     <i class="fas fa-paw"></i>
-                    <a href="#"> Categorias</a>
+                    <a href="/categoria.html"> Categorias</a>
                     <i class="fas fa-paw"></i>
                     <a href="#"> Pets</a>
                     <i class="fas fa-paw"></i>
-                    <a href="#"> Nosotros</a>
+                    <a href="/nosotros.html"> Nosotros</a>
                     <i class="fas fa-paw"></i>
-                    <a href="#"> Contactanos</a>
-            </div>
+                    <a href="/contactanos.html"> Contactanos</a>
+                </nav>
         </section>
-        <section class="bannergrande">
             <div class="ElementosBannerGrande">
                 <span class="placer">¡Es un placer tenerte aquí!</span>
                 <span class="descuento">¡Comederos en descuento!</span>
-                <button id="botonComederos">COMEDEROS</button>
+                <button class="botonComederos">COMEDEROS</button>
             </div>
-        </section>
-        <section class="productosDestacados">
-            <div>
-                <i id="iconoHuella" class="fas fa-paw"></i>
-                <h2>Productos Destacados</h2>
+            <div class="productosDestacados">
+                <i id="iconoHuella" class="fas fa-paw"></i><h2>Productos Destacados</h2>
             </div>
             <div class="vinculosProductosDestacados">
                     <ul class="linkProductosDestacados">
@@ -52,22 +53,21 @@
                         <li><a href="comida.html"> Comida</a></li>
                     </ul>
             </div>
-        </section>
         <section class="TarjetasProductos">
             <div class="imagenesProductos">
                 <img src="img/churrasquito.png" alt="aqui van los churrasquitos">
-                <p class="cardProductName">Juguete Churrasquito</p>
-                <p class="cardPrice">$150</p>
+                <p class="NombreProdTarjeta">Juguete Churrasquito</p>
+                <p class="PrecioTarjeta">$150</p>
             </div>
             <div class="imagenesProductos">
                 <img src="img/comedero.png" alt="aqui van los comederos">
-                <p class="cardProductName">Comedero para perros</p>
-                <p class="cardPrice">$250</p>
+                <p class="NombreProdTarjeta">Comedero para perros</p>
+                <p class="PrecioTarjeta">$250</p>
             </div>
             <div class="imagenesProductos">
                 <img src="img/huesitos.png" alt="aqui van los huesitos">
-                <p class="cardProductName">Juguete Huesito</p>
-                <p class="cardPrice">$650</p>
+                <p class="NombreProdTarjeta">Juguete Huesito</p>
+                <p class="PrecioTarjeta">$650</p>
             </div>
         </section>
     </main>

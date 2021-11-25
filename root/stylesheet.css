@@ -12,7 +12,7 @@ body{
 
 /***** HEADER *****/
 header{
-    background: #222222;
+    background: black;
     color: white;
     width: 100%;
     height: 60px;
@@ -24,23 +24,33 @@ h2 header{
     font-weight: bold;
     text-align: center;
     display:flex;
+    margin-left: 80px;
 }
-.opcionesDerecha{
+.navHeaderNegro{
     display:flex;
     align-items: center;
+    border: none;
+    background: black;
+    color: white;
+    margin-right: 200px;
 }
-.opcionesDerecha nav{
-    display: flex;
+.navHeader{
+    display:flex;
     align-items: center;
-
+    border: none;
+    background: black;
+    color: white;
+    padding: 10px;
+    font-size: medium;
 }
-.opcionesDerecha a{
-    padding:6px;
+.navHeader option{
+    color: white;
+
+    
 }
 
 /***MAIN****/
-main{
-}
+
 .headerNaranja{
     background-color:  #F0A83E;
     width: 100%;
@@ -56,9 +66,8 @@ main{
     max-width: 75%;
     height: auto;
 }
-.headerNaranja div{
-    display: flex;
-    justify-content: flex-end;
+#menuBurger{
+    display: none;
 }
 .headerNaranja nav {
     display: flex;
@@ -78,59 +87,52 @@ main{
     padding:8px;
 }
 /******BANNER GRANDE************/
-.bannergrande{
-    background-image: url(/root/img/bannerGrande.png);
+
+.ElementosBannerGrande {
+    background-image: url(/img/bannerGrande.png);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
     height: 700px;
     text-align: center;
     margin-bottom: 40px;
-}
-.ElementosBannerGrande {
     display: flex;
     flex-direction: column;
-    padding: 50px;
     align-items: flex-end;
     justify-content: center;
-    align-content:
 }
 
 .placer{
-    Width: 365px;
-    padding: 20px;
+    Width: 380px;
+    padding: 25px;
     background-color: white;
     border-radius: 10px;
-    font-weight:500;
     font-size: 30px;
     text-align: center;
-    margin-bottom: 5px;
+    margin-right: 200px;
 }
-/***
-flex-direction: row;
-justify-content: space-around;
-align-items: center;
-margin-left: 50px;
-margin-right: 50px;******/
+
 .descuento{
-    font-size: 40px;
+    font-size: 20px;
     font-weight: lighter;
     letter-spacing: 0,5px;
-    margin-top:10px
+    margin-top:40px;
+    margin-right: 300px;
 
 }
-#botonComederos{
+.botonComederos{
     display: flex;
-    padding:30px;
+    padding: 25px;
     font-size: 25px;
     background-color: #F0A83E;
     border: 0;
     border-radius: 5px;
     color: white;
+    margin-right: 310px;
+    margin-top:20px;
 }
 /******PRODUCTOS DESTACADOS*********/
-.productosDestacados{
-}
+
 .productosDestacados div{
     display: flex;
     flex-direction: column;
@@ -138,10 +140,17 @@ margin-right: 50px;******/
 }
 /****CARD******/
 #iconoHuella{
+    font-size: 50px;
+    font-weight: bold;
     text-align: center;
+    color: #F0A83E;
+}
+.productosDestacados{
+    display: flex;
+    flex-direction: column;
 }
 .productosDestacados h2{
-    font-size: 30px;
+    font-size: 50px;
     font-weight: bold;
     text-align: center;
 }
@@ -152,21 +161,24 @@ margin-right: 50px;******/
     text-align: center;
     font-family: Roboto;
     margin: 10px 15px;
+    flex-direction: row;
 }
 
-.linkProductosDestacados ul{
+.linkProductosDestacados{
     display: flex;
     text-decoration: none;
-    color: black;
+    flex-direction: row;
 }
 .linkProductosDestacados li{
     list-style: none;
+    display: flex;
+    text-decoration: none;
 
 
 }
 .linkProductosDestacados a{
     text-decoration: none;
-    color: black;
+    color: #666666;
     font-size: 18px;
     font-weight: 500;
     padding: 5px;
@@ -174,30 +186,38 @@ margin-right: 50px;******/
 /*******TARJETAS PRODUCTOS********/
 .TarjetasProductos{
     display: flex;
+    justify-content: space-evenly;
 }
 .imagenesProductos{
-    width: 30%;
     display: flex;
     align-items: center;
     background-color: #FBFAF6;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     flex-direction: column;
-    justify-content: space-around;
     align-content: center;
     margin: 5px;
     max-width: 90%;
     text-align: center;
 }
-.cardProductName{
+.NombreProdTarjeta{
     color: #3C2313;
     font-size: 24px;
     font-weight: 500;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    width: 30%;
+    text-align: center;
 
 }
-.cardPrice{
+.PrecioTarjeta{
     color: #F0A83E;
     font-weight: 500;
     font-size: 24px;
+    width: 30%;
+    text-align: center;
 }
 
 
@@ -233,6 +253,7 @@ margin-right: 50px;******/
     height: 40px;
     font-family: Roboto;
     font-weight: lighter;
+    margin: 5px 0px;
 }
 .correoElectronico{
     background-color: #3C2313;
@@ -243,6 +264,7 @@ margin-right: 50px;******/
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
+    margin: 5px 0px;
 
 }
 .Telefono{
@@ -254,12 +276,15 @@ margin-right: 50px;******/
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
+    margin: 5px 0px;
 }
 .botonesContactanos{
     display: flex;
     font-size: 14px;
     font-weight: 400;
     color: #FFFFFF;
+    align-content: center;
+    justify-content: center;
 }
 .botonResetear{
     background: #8A8787;
@@ -295,28 +320,15 @@ margin-right: 50px;******/
     font-size: 20px;
     margin-top: 10px;
     text-align: center;
-    padding: 20px;
 }
-/***
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #F0A83E;
-    color: #F3F3F3;
-    font-size: 20px;
-    height: 62
-px
-;
-    font-weight: 700;
-    padding: 40
-px
-;******/
+
 .correoSuscribirse{
     background: #FFFFFF;
     border-radius: 15px;
     width: 271px;
     height: 40px;
     color: lightgray;
+    border-style: none;
 }
 .suscribirme{
     width: 100px;
@@ -324,6 +336,7 @@ px
     background: #3C2313;
     border-radius: 15px;
     color: white;
+    border-style: none;
 }
 .susNovedades{
     color: #F3F3F3;
@@ -372,26 +385,48 @@ footer p{
     text-align: center;
 }
 
-/*********** ul.ListaNavegacion{
-    background-color:  #F0A83E;
-    width: 100%;
-    height: 62px;
-    box-sizing: border-box;
-    display: inline;
-    list-style-type: none;
-    overflow: hidden;
+@media (max-width: 768px) {
+    header {
+        background-color: black;
+        display: flex;
+        font-size: 18px;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+    .navHeader{
+        background-color: black;
+        border-style: none;
+        color: #F3F3F3;
+        font-size: 18px;
+    }
 
-}
-li{
-    float: left;
-}
-li a{
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    background-color:#F0A83E;
-  }
-.datos{
-    background-color: #3C2313;
-    color: white;
+    .headerNaranja nav {
+        display: none;
+    }
+    #menuBurger{
+        display: flex;
+        color: white;
+        font-size: 50px;
+        text-align: center;
+        justify-self: center;
+    }
+    .TarjetasProductos{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    .imagenesProductos{
+        display: flex;
+        align-items: center;
+        background-color: #FBFAF6;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        flex-direction: column;
+        align-content: center;
+        margin: 5px;
+        max-width: 90%;
+        text-align: center;
+    }
+
+
 }
