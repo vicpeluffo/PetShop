@@ -83,6 +83,9 @@ h2 header{
     float: right;
     padding: 5px;
 }
+.headerNaranja a:hover{
+    background-color: #3C2313;
+}
 .headerNaranja i{
     padding:8px;
 }
@@ -372,6 +375,10 @@ h2 header{
     font-weight: 500;
     color: #8A8787;
 }
+.imgFooter{
+    display: flex;
+    align-self: flex-end;
+}
 
 /***** FOOTER *****/
 footer{
@@ -402,14 +409,21 @@ footer p{
     }
 
     .headerNaranja nav {
-        display: none;
+        flex-direction: column;
+        margin-top: 150px;
+        background-color: #F0A83E;
+    }
+    .headerNaranja nav a{
+        background-color: #F0A83E;
+    }
+    .headerNaranja nav i{
+        background-color: #F0A83E;
     }
     #menuBurger{
-        display: flex;
+        display: inline-block;
         color: white;
         font-size: 50px;
-        text-align: center;
-        justify-self: center;
+        cursor: pointer;
     }
     .TarjetasProductos{
         display: flex;
@@ -426,6 +440,20 @@ footer p{
         margin: 5px;
         max-width: 90%;
         text-align: center;
+    }
+    .suscribirse {
+        display:inline-block;
+        height: 100px;
+    }
+    .suscribirse form{
+        padding: 10px;
+    }
+    .datos{
+        display: flex;
+        flex-direction: column;
+    }
+    .infoElement{
+        display: flex;
     }
 
 
